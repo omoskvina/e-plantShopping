@@ -1,1 +1,2 @@
-# coding-project-template
+# e-plantShopping
+Final Project: Paradise Nursery Shopping Application
