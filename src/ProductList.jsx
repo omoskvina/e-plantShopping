@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import './ProductList.css'
+import './ProductList.css';
 import CartItem from './CartItem';
-import { addItem} from './ProductList'
+import { addItem, removeItem, updateQuantity} from './CartSlice';
+
 function ProductList({ onHomeClick }) {
     const [showCart, setShowCart] = useState(false);
     const [showPlants, setShowPlants] = useState(false); // State to control the visibility of the About Us page
@@ -261,6 +262,7 @@ function ProductList({ onHomeClick }) {
           ...prevState, // Spread the previous state to retain existing entries
           [product.name]: true, // Set the current product's name as a key with value 'true' to mark it as added
         }));
+
     };
 
     
@@ -306,7 +308,7 @@ function ProductList({ onHomeClick }) {
                                     <div clasName="product-cost">{plant.cost}</div>
                                     <button
                                         className="product-button"
-                                        onClick={()=> handleAddtoCart(plant)}
+                                        onClick={()=> handleAddToCart(plant)}
                                     >
                                         Add to Cart    
                                     </button>
