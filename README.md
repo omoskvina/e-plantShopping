@@ -8,7 +8,7 @@ git clone https://github.com/omoskvina/e-plantShopping
 
 
 # demo 
-Live demo: 
+Live demo: https://omoskvina.github.io/e-plantShopping/
 
 # technologies used
 - React + Vite
